@@ -1,0 +1,195 @@
+/* Estilo para o Header */
+.cabecalho {
+  font-family: 'Main', sans-serif;
+  background-color: #100720;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+.cabecalho a:link,
+.cabecalho a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.cabecalho a:hover {
+  color: rgb(123, 60, 39);
+}
+
+.logo {
+  padding-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 20px;
+}
+
+.carrinho {
+  display: flex;
+  align-items: center;
+}
+
+.mensagem {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  flex-grow: 1;
+  margin: 0;
+}
+
+/* Estilo do botão Adicionar Produto */
+.adicionarProduto {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #100720;
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.adicionarProduto::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.adicionarProduto:hover {
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  transform: scale(1.1);
+}
+
+.adicionarProduto:active {
+  transform: scale(1) rotate(3deg);
+  transition: transform 0.3s;
+}
+
+/* Estilo para o Footer */
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #100720;
+  color: white;
+  width: auto;
+  height: 150px;
+  padding: 20px;
+}
+
+.footer a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ff5ef7;
+}
+
+.footer p {
+  text-align: center;
+  justify-content: center;
+}
+
+.logoFooter img {
+  justify-content: end;
+  padding-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Estilo para os cards no Main */
+/* Estilo para os cards no Main */
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px; 
+  padding: 1cm;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1cm;
+  width: 30%;
+  height: auto;
+  border-radius: 24px;
+  background-color: #EBE2D2;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p {
+  color: #000000; /* Define a cor do texto como preto */
+  font-size: 16px; /* Define um tamanho de fonte padrão */
+  margin: 0; /* Remove a margem dos parágrafos */
+}
+
+.card p.nome {
+  font-size: 24px; /* Aumenta o tamanho do nome */
+  font-weight: bold; /* Deixa o nome em negrito */
+}
+
+.customButton {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #100720;
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.customButton::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.customButton:hover {
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  transform: scale(1.1);
+}
+
+.customButton:active {
+  transform: scale(1) rotate(3deg);
+  transition: transform 0.3s;
+}
